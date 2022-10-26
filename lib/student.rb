@@ -1,13 +1,15 @@
-class ChattyStudent < Student
+class Student
+    attr_accessor :name
+
+    def initialize
+        @name = name
+    end
 
     def hello
-        puts "Hey there! I'm so excited to learn stuff.\nHow are you doing today? I'm okay, but I'm kind of tired. Did you watch The Walking Dead last night? You didn't?! Oh man, it was so crazy! What, you don't want any spoilers? Okay well let me just tell you who died...\n"
-
+        puts "Hey there! I'm so excited to learn stuff.\n"
     end
 
     def raise_hand
-        10.times do
-           super
-        end
+        puts 'Pick me!'
     end
 end
